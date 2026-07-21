@@ -57,14 +57,43 @@ st.markdown(
 
 st.markdown(
     """
-    <div class="header">
-        <h1>🏏 ODI High Scorer Predictor</h1>
-        <p>Predict whether a player belongs to the high-scoring category.</p>
-    </div>
+    <style>
+
+    .stApp {
+        background: linear-gradient(135deg, #071a2f, #102d4a);
+    }
+
+    .header {
+        background: linear-gradient(135deg, #0b5ed7, #00a6fb);
+        padding: 30px;
+        border-radius: 18px;
+        text-align: center;
+        color: white;
+        margin-bottom: 25px;
+    }
+
+    .header h1 {
+        margin: 0;
+    }
+
+    .result {
+        padding: 25px;
+        border-radius: 18px;
+        text-align: center;
+        background: #123c28;
+        color: white;
+        margin-top: 20px;
+    }
+
+    /* Make section headings white */
+    h2 {
+        color: white !important;
+    }
+
+    </style>
     """,
     unsafe_allow_html=True
 )
-
 st.subheader("📊 Player Statistics")
 
 col1, col2 = st.columns(2)
