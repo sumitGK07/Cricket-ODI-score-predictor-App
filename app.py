@@ -32,7 +32,6 @@ feature_columns = joblib.load("odb_columns.pkl")
 st.markdown(
 """ <style>
 
-```
 /* Main application background */
 .stApp {
     background: linear-gradient(135deg, #071a2f, #102d4a);
@@ -105,7 +104,6 @@ label {
 </style>
 """,
 unsafe_allow_html=True
-```
 
 )
 
@@ -140,7 +138,6 @@ col1, col2 = st.columns(2)
 
 with col1:
 
-```
 matches = st.number_input(
     "Matches",
     min_value=0,
@@ -161,11 +158,11 @@ not_outs = st.number_input(
     value=20,
     step=1
 )
-```
+
 
 with col2:
 
-```
+
 strike_rate = st.number_input(
     "Strike Rate",
     min_value=0.0,
@@ -186,7 +183,7 @@ fifties = st.number_input(
     value=40,
     step=1
 )
-```
+
 
 # ============================================================
 
@@ -198,7 +195,7 @@ st.markdown("---")
 
 if st.button("🔮 Predict High Scorer"):
 
-```
+
 try:
 
     # Create DataFrame from user input
@@ -248,4 +245,3 @@ try:
 except Exception as e:
 
     st.error(f"⚠️ Prediction failed: {e}")
-```
